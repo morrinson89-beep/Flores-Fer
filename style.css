@@ -1,0 +1,58 @@
+body{
+    margin:0;
+    background:black;
+    overflow:hidden;
+    font-family:Arial;
+    color:white;
+}
+
+.carta{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0.9);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    z-index:10;
+}
+
+button{
+    padding:10px 20px;
+    background:gold;
+    border:none;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.contenedor{
+    position:relative;
+    width:100%;
+    height:100vh;
+}
+
+.f.flor{
+    position:absolute;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background: radial-gradient(circle, #3b2f2f 30%, #ffcc00 31%);
+    box-shadow:
+        0 0 10px #ffcc00,
+        0 0 20px #ffcc00;
+.flor::before{
+    content:"";
+    position:absolute;
+    width:30px;
+    height:30px;
+    top:-6px;
+    left:-6px;
+    border-radius:50%;
+    background: repeating-conic-gradient(
+        yellow 0deg 10deg,
+        transparent 10deg 20deg
+    );
+    z-index:-1;
+}
