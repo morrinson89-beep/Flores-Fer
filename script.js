@@ -64,7 +64,7 @@ function lluvia(){
     const cont = document.getElementById("lluvia");
 
     setInterval(()=>{
-        let f = document.createElement("div");
+        const f = document.createElement("div");
         f.classList.add("flor");
 
         f.style.left = Math.random()*100+"vw";
